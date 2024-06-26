@@ -1,0 +1,118 @@
+body {
+    text-align: center;
+    background-color: black
+}
+h1 {
+    color: #fff;
+    font-size: 60px;
+    animation: pulsate 10s infinite alternate;
+
+
+}
+#magicBall {
+    width: 670px; height:372px;
+    
+    
+}
+label {
+    font-size: 25px;
+    color: #fff;
+    animation: pulsate 1.5s infinite alternate;
+}
+input {
+    font-size: 15px;
+    width: 300px;
+}
+button {
+    background-color: blueviolet;
+    color: #fff;
+    font-size: 2rem;
+    border: none !important;
+    border-radius: 15px;
+    cursor: pointer;
+}
+button:hover{
+    -webkit-mask-image: linear-gradient(-75deg, rgba(0,0,0,.6) 30%, #000 50%, rgba(0,0,0,.6) 70%);
+    -webkit-mask-size: 200%;
+    animation: shine 2s infinite;
+    
+}
+#answer{
+    color: aqua;
+    
+}
+.centered {
+    position: absolute;
+    top: 39%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+@keyframes pulsate {
+    
+    100% {
+  
+        text-shadow:
+        0 0 4px #fff,
+        0 0 11px #fff,
+        0 0 19px #fff,
+        0 0 40px rgb(204, 0, 255),
+        0 0 80px rgb(204, 0, 255),
+        0 0 90px rgb(204, 0, 255),
+        0 0 100px rgb(204, 0, 255),
+        0 0 150px rgb(204, 0, 255);
+    
+    }
+    
+    0% {
+  
+      text-shadow:
+      0 0 2px #fff,
+      0 0 4px #fff,
+      0 0 6px #fff,
+      0 0 10px rgb(204, 0, 255),
+      0 0 45px rgb(204, 0, 255),
+      0 0 55px rgb(204, 0, 255),
+      0 0 70px rgb(204, 0, 255),
+      0 0 80px rgb(204, 0, 255);
+  
+    }
+}
+@-webkit-keyframes shine {
+    from {
+        -webkit-mask-position: 150%;
+      }
+      
+      to {
+        -webkit-mask-position: -50%;
+      }
+    
+    
+}
+@keyframes shake {
+    10%, 90% {
+      transform: translate3d(-1px, 0, 0);
+    }
+  
+    20%, 80% {
+      transform: translate3d(2px, 0, 0);
+    }
+  
+    30%, 50%, 70% {
+      transform: translate3d(-4px, 0, 0);
+    }
+  
+    40%, 60% {
+      transform: translate3d(4px, 0, 0);
+    }
+  }
+  .shake-animation{
+    animation: shake 0.5s infinite;
+  }
+  .fadeIn-animation{
+    animation: fadeIn 3s infinite;
+  }
+
+  @keyframes fadeIn {
+    0% { opacity: 0;}
+    100% { opacity: 1;}
+  }

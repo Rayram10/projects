@@ -1,0 +1,64 @@
+body{
+    margin: 0;
+    background-color: black;
+}
+
+h1 {
+    text-align: center;
+    color: aliceblue;
+}
+h2 {
+    text-align: center;
+    color: aliceblue;
+}
+form {
+    color: aliceblue;
+    text-align: center;
+    
+}
+footer {
+    color: aliceblue;
+    text-align: center;
+}
+#randomNum {
+    color: aliceblue;
+    text-align: center;
+}
+#GuessButton {
+    font-size: 20px;
+    border-radius: 15px;
+    border: none; 
+}
+button:hover{
+    cursor: pointer;
+    background-color: red;
+    
+}
+.navbar ul{
+    list-style-type: none;
+    background-color: blueviolet;
+    padding: 0px;
+    margin: 0px;
+    overflow: hidden;
+    display: flex;
+    justify-content: space-evenly;
+
+}
+.navbar buttton{
+    color: white !important;
+    text-decoration: none;
+    padding: 17px;
+    display: block;
+    text-align: center;
+    font-size: 20px;
+    border-radius: 15px;
+    border: none;  
+}
+.navbar a:hover{
+    background-color:black;
+}
+.navbar li{
+    float: left;
+    
+
+}

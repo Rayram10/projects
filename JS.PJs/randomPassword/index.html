@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Random Password</title>
+  </head>
+  <body>
+    <header class="header">
+      <a href="#" class="logo">&#8479oy</a>
+
+      <nav class="navbar">
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Gallery</a>
+        <a href="#">Services</a>
+        <a href="#">Contact</a>
+      </nav>
+    </header><br><br>
+    <div id="box" class="contaniner">
+        <h1>Random Password Generator</h1><br>
+        <p>Create strong and secure passwords to keep your account safe online.</p>
+        <div class="box">
+            <img src="img/pngtree-vector-lock-icon-png-image_318067-removebg-preview.png" alt="Picture of a lock">
+            <div id="randomPassword">Password</div>
+        </div>
+        <div id="passwordLength">
+            <span><button class="button-17" role="button" id="generateButton">Generate</button></span><br><br>
+            <label for="range">Password length: <span id="sliderNum">num</span> </div> </label><br>
+            <input type="range" min="1" max="50" value="25" class="slider" id="myRange">
+        </div>
+        <div id="checkBoxes">
+            <label for="checkBoxes">Characters Used:</label><br><br>
+            <input type="checkbox" id="upperCase" name="upperCase">
+            <label for="upperCase">ABC</label>
+            <input type="checkbox"id="lowerCase" name="lowerCase">
+            <label for="lowerCase">abc</label>
+            <input type="checkbox" id="numbers" name="numbers">
+            <label for="numbers">123</label>
+            <input type="checkbox" id="symbols" name="symbols">
+            <label for="symbols">#%@</label>
+
+
+        </div>
+        <script src="script.js"></script>
+
+    
+    </div>
+  </body>
+</html>
